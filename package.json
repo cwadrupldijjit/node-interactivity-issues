@@ -1,0 +1,20 @@
+{
+  "name": "hanging-cp-why-running",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "why": "node --import why-is-node-running/include index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Samuel Skeen",
+    "email": "sskeen9@gmail.com",
+    "url": "https://github.com/cwadrupldijjit"
+  },
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "why-is-node-running": "^3.2.2"
+  }
+}
