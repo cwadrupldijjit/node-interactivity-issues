@@ -1,0 +1,7 @@
+# Issues in Node Interactive Elements
+
+This repo is a little odd, where it is meant to show a progression from working through issues encountered while doing things with Node interactivity.  These issues were either encountered while working on a project as described elsewhere and while trying to illustrate the basic issue, I ran into a visually different problem which may still have a similar root cause.
+
+As I run into issues (and potentially fix them in my code or register an issue on GitHub to the node repository if it is indeed a bug), this repo might continue to expand into testing out the next issue I ran into until that has been better fleshed out.  It allows me to test the issue across platforms as I clone the same repository to other systems I have access to.
+
+The organization of this repo will generally follow numbered subfolders (which sets up the order in which things were encountered) with labels (which give a description about what is encountered in that scenario).  Many of the subfolders will have similar setups to each other, especially when the example builds on a previous example.  To help with the documentation and reference, I have provided/will provide a readme in each subfolder with greater context and how to encounter the same issues as I am describing as well as the fix made and possibly the commit hash for the version that was broken before the fix.  As such, this readme only covers the very basic of the explanation for the repo itself.

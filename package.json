@@ -1,9 +1,8 @@
 {
-  "name": "hanging-cp-why-running",
+  "name": "node-interactive-issues",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "why": "node --import why-is-node-running/include index.js"
   },
   "keywords": [],
   "author": {
@@ -13,8 +12,5 @@
   },
   "license": "ISC",
   "type": "module",
-  "description": "",
-  "devDependencies": {
-    "why-is-node-running": "^3.2.2"
-  }
+  "description": "A repo whose purpose is to work through the issues I'm encountering while trying to do interactive things (both in direct usage of stdio as well as child process) in Node"
 }
