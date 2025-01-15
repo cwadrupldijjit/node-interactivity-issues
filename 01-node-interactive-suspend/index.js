@@ -7,7 +7,7 @@ if (process.argv.includes('advanced')) {
     disableAdvancedInput();
 }
 
-await interactive(process.platform ? 'pwsh' : 'bash');
+await interactive(process.platform == 'win32' ? 'pwsh' : 'bash');
 
 
 function enableAdvancedInput() {
