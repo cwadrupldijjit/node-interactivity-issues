@@ -13,10 +13,7 @@ console.log('Some output after running the interactive command');
 
 
 function enableAdvancedInput() {
-    if (process.platform == 'win32') {
-        process.stdin.resume();
-    }
-    
+    process.stdin.resume();
     process.stdin.setRawMode(true);
     !keypressEventsEnabled ? (emitKeypressEvents(process.stdin), keypressEventsEnabled = true) : null;
     process.stdin.on('keypress', onKeypress);
@@ -26,10 +23,7 @@ function disableAdvancedInput() {
     process.stdin.off('keypress', onKeypress);
     // can't undo the "emitKeypressEvents"...
     process.stdin.setRawMode(false);
-    
-    if (process.platform == 'win32') {
-        process.stdin.pause();
-    }
+    process.stdin.pause();
 }
 
 /**

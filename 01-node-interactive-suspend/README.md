@@ -10,7 +10,8 @@
 
 | Commit Hash | Description |
 |-|-|
-| \*_Current_\* | Issue described occurred, using full scope of "advanced input" toggle as described |
+| 4ba4a38e50730259de37ae6f84846589c9b05f56 | Issue described occurred, using full scope of "advanced input" toggle as described |
+| \*Current\* | Fixed it by removing the conditional requirement for the `process.stdin.resume()` and `process.stdin.pause()`, putting `stdin` into "classic" mode (maybe meaning "manual" mode?) |
 
 ### How to run
 
@@ -29,6 +30,7 @@ There are two "modes" to this test.
 - Invoke the script:  `node index.js advanced`
 - Behavior:  Toggles an advanced input mode on and then back off (see the later section of "'Advanced Input', what?"), then tries to run the same interactive child process as before, but when you attempt to type anything, it kicks you out of the node script entirely and says that the process was suspended; bringing it to the foreground appears to have effectively destroyed its function
 - Note:  Windows seems to work fine.  I wonder if it's related to the `process.stdin.resume()`/`process.stdin.pause()`.
+- Fix:  Just always do that; per Node's documentation, this turns it into "classic" mode for `stdio`.  It just works.
 
 ### "Interactive Child Process", what?
 
