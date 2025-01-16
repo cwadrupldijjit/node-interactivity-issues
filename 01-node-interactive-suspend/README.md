@@ -28,6 +28,7 @@ There are two "modes" to this test.
 
 - Invoke the script:  `node index.js advanced`
 - Behavior:  Toggles an advanced input mode on and then back off (see the later section of "'Advanced Input', what?"), then tries to run the same interactive child process as before, but when you attempt to type anything, it kicks you out of the node script entirely and says that the process was suspended; bringing it to the foreground appears to have effectively destroyed its function
+- Note:  Windows seems to work fine.  I wonder if it's related to the `process.stdin.resume()`/`process.stdin.pause()`.
 
 ### "Interactive Child Process", what?
 
